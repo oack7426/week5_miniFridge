@@ -1,0 +1,500 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*For IE 6&7 only*/
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+/* 以上 */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    height: 800px;
+    top: 150px;
+    width: auto;
+    padding: 16px;
+    padding-top: 400px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 15%;
+    margin: 0 5px;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/* 以下 */
+
+header {
+    height: 74px;
+    background: #000;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 74px;
+    text-align: center;
+}
+
+header.open-bg-grey {
+    background: rgb(46, 46, 46);
+}
+
+header a {
+    color: #50FF44;
+    text-decoration: none;
+}
+
+.main {
+    width: 620px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.section {
+    padding: 24px 0;
+}
+
+.comic_img {
+    width: 300px;
+    height: 446px;
+    background: #FFFFFF;
+    border: 4px solid #000000;
+    overflow: hidden;
+    float: left;
+}
+
+.comic_img>img {
+    width: 300px;
+}
+
+.comic_text {
+    width: 318px;
+    float: left;
+}
+
+.comic_text h1 {
+    width: 318px;
+    height: 52px;
+    color: #FFFFFF;
+    background: #000000;
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 52px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.comic_text h3 {
+    font-weight: 900;
+    line-height: 24px;
+}
+
+.comic_text_medio {
+    padding: 16px 24px;
+}
+
+.comic_text_medio h3,
+.comic_text_medio p {
+    display: inline-block;
+}
+
+.comic_text_medio h3 {
+    width: 60px;
+    height: 35px;
+}
+
+.comic_text_medio p {
+    width: 200px;
+}
+
+.comic_text_footer {
+    padding: 0 24px;
+    line-height: 24px;
+}
+
+.comic_text_footer h3 {
+    font-weight: 900;
+    height: 30px;
+}
+
+.all_chapters h2 {
+    width: 190px;
+    padding: 8px 24px;
+    background: #000;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.all_chapters>.chapter_iteam {
+    padding: 10px 0;
+    border: 4px solid #000000;
+}
+
+.chapter_iteam a {
+    padding: 0 20px;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+.chapter_iteam a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.chapter_iteam a span {
+    display: inline-block;
+    min-width: 100px;
+}
+
+
+/* 上方是index */
+
+.wrap {
+    background: #f2f2f2;
+}
+
+.wrap.open-bg-block {
+    background: #000;
+}
+
+.main-page {
+    padding: 24px 0;
+}
+
+.page_top h2 {
+    font-size: 20px;
+    font-weight: 900;
+    float: left;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.page_top h2.open-text-white {
+    color: #fff;
+}
+
+.page_top form {
+    float: left;
+}
+
+.page_top form select {
+    width: 127px;
+    height: 35px;
+    border: 2px solid #000000;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    margin: 0;
+    display: block;
+    float: left;
+    background: #fff;
+}
+
+.page_top .light {
+    float: right;
+    height: 35px;
+    line-height: 35px;
+}
+
+.page_top .light .light-box {
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    border: 2px solid #000000;
+    overflow: hidden;
+    margin-bottom: -5px;
+}
+
+.page_top .light .light-box.open {
+    border: 2px solid #fff;
+    background: #fff;
+}
+
+.light-box .light-boxbox {
+    width: 23px;
+    height: 23px;
+    background: #000;
+    float: left;
+}
+
+.light-boxbox.open-box {
+    float: right;
+}
+
+
+/* .comic-img-center img {
+    width: 610px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 15px;
+    position: relative;
+} */
+
+.mySlides img {
+    padding-top: 24px;
+    padding-bottom: 15px;
+}
+
+.svg-inline--fa.fa-moon.fa-w-16 {
+    font-size: 18px;
+}
+
+.svg-inline--fa.fa-sun.fa-w-16 {
+    font-size: 20px;
+}
+
+.svg-inline--fa.fa-moon.fa-w-16.open-icon,
+.svg-inline--fa.fa-sun.fa-w-16.open-icon {
+    color: #fff;
+}
