@@ -1,37 +1,55 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/oack7426/week5_miniFridge/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>index</title>
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+    <header><a href="index.html">Comicomic</a></header>
+    <div class="main">
+        <div class="section">
+            <div class="comic_img">
+                <img src="https://hexschool.github.io/THE_F2E_Design/week5-comic%20viewer/assets/comic%20cover.png" alt="">
+            </div>
+            <div class="comic_text">
+                <h1>MY HEXSCHOOL</h1>
+                <div class="comic_text_medio">
+                    <h3>Genres</h3>
+                    <p>Fusce/vehicula/dolor</p>
+                    <br>
+                    <h3>Author</h3>
+                    <p>Namae Shiranai</p>
+                    <br>
+                    <h3>Status</h3>
+                    <p>Ongoing</p>
+                    <br>
+                    <h3>Rate</h3>
+                    <div></div>
+                    <!-- TODO:星星評分 -->
+                </div>
+                <div class="comic_text_footer">
+                    <h3>Summary</h3>
+                    <p>If your banker breaks, you snap; if your apothecary by mistake sends you poison in your pills, you die. Therefore, I say, I saw that this situation of mine was the precise situation of every mortal that has this Siamese connexion with
+                        a plurality of other mortals. </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="all_chapters">
+            <h2>All Chapters</h2>
+            <div class="chapter_iteam">
+                <a href="./pages/page1.html"><span>Chapter 1:</span>The F2E Challenge Start!</a>
+                <a href="#"><span>Chapter 2:</span>Todo List is Going Crazy!</a>
+                <!-- TODO:記得寫jquery判斷式哪個是最尾的加上new圖示 -->
+            </div>
+        </div>
+    </div>
+</body>
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/oack7426/week5_miniFridge/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
