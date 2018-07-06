@@ -6,6 +6,8 @@ $(document).ready(function() {
         $('.wrap').toggleClass('open-bg-block');
         $('.page_top h2').toggleClass('open-text-white');
         $('header').toggleClass('open-bg-grey');
+        $('.prev').toggleClass('open_prev');
+        $('.next').toggleClass('open_next');
     });
 });
 
