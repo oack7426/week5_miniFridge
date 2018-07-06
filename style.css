@@ -206,16 +206,41 @@ table {
 /* Position the "next button" to the right */
 
 .next {
-    right: 0;
+    right: -52px;
     border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: -52px;
 }
 
 
 /* On hover, add a black background color with a little bit see-through */
 
+.prev,
+.next {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: #000;
+    font-size: 40px;
+}
+
+.prev.open_prev,
+.next.open_next {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: #fff;
+    font-size: 40px;
+}
+
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000;
+    color: #50FF44;
+}
+
+.prev.open_prev:hover,
+.next.open_next:hover {
+    color: #000;
+    background-color: #50FF44;
 }
 
 
